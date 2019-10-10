@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Projekti
+namespace ConsoleApp5
 {
-    class lista
+    class Tyotehtavat
     {
     }
 }
