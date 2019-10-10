@@ -10,10 +10,11 @@ namespace Projekti
         private string _tehtavanSuoritusaste;
         private int _pvm;
 
-        public ylaluokka(string tehtavanimi, int pvm)
+        public ylaluokka(string tehtavanimi, int pvm, string tehtavansuoritusaste)
         {
             _tehtavanimi = tehtavanimi;
             _pvm = pvm;
+            _tehtavanSuoritusaste = tehtavansuoritusaste;
         }
         public string HaeTehtavanimi()
         {
