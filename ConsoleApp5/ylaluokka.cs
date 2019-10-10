@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Projekti
 {
-    class lista
+    class ylaluokka
     {
     }
 }
