@@ -4,7 +4,11 @@ using System.Text;
 
 namespace Projekti
 {
-    class Tyotehtavat
+    class tyotehtavat : ylaluokka
     {
+        public tyotehtavat(string tehtavanimi, int pvm, string suoritusaste) : base(tehtavanimi, pvm, suoritusaste)
+        {
+
+        }
     }
 }
