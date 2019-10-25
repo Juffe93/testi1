@@ -6,12 +6,34 @@ namespace Projekti
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Tehtävä nimi:" );
-            String tehtavanimi = Console.ReadLine();
-            Console.WriteLine("Syötä suoritustaste: ");
-            String suoritusaste = Console.ReadLine();
-            Console.WriteLine("Tehtävän aikaraja: ");
-            DateTime deadline = DateTime.Parse(Console.ReadLine());
+            Console.Write("Syötä Kategoria: ");
+            String Kategoria = Console.ReadLine();
+
+            if ( Kategoria == ("Koulutehtava") ) 
+            {
+                Console.Write("Tehtävä nimi:");
+                String tehtavanimi = Console.ReadLine();
+                Console.Write("kurssin nimi:");
+                String kategoria = Console.ReadLine();
+                Console.Write("Syötä suoritustaste: ");
+                String suoritusaste = Console.ReadLine();
+                Console.Write("Tehtävän aikaraja: ");
+                DateTime deadline = DateTime.Parse(Console.ReadLine());
+            }
+            else
+            {
+                Console.Write("Tehtävä nimi:");
+                String tehtavanimi = Console.ReadLine();
+                Console.Write("kurssin nimi:");
+                String kategoria = Console.ReadLine();
+                Console.Write("Syötä suoritustaste: ");
+                String suoritusaste = Console.ReadLine();
+                Console.Write("Tehtävän aikaraja: ");
+                DateTime deadline = DateTime.Parse(Console.ReadLine());
+            }
+            
+            
+            
 
         }
     }
