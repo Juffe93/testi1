@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
@@ -8,27 +8,31 @@ namespace Projekti
     {
         private string _tehtavanimi;
         private string _tehtavanSuoritusaste;
-        private int _pvm;
+        private int _Deadline;
 
-        public ylaluokka(string tehtavanimi, int pvm, string tehtavansuoritusaste)
+
+        public ylaluokka( string tehtavanimi, string tehtavansuoritusaste, int Deadline)
         {
             _tehtavanimi = tehtavanimi;
-            _pvm = pvm;
             _tehtavanSuoritusaste = tehtavansuoritusaste;
+            _Deadline = Deadline;
         }
         public string HaeTehtavanimi()
         {
             return _tehtavanimi;
         }
 
-        public int HaePvm()
-        {
-            return _pvm;
-        }
         public string HaeSuoritusaste()
         {
             return _tehtavanSuoritusaste;
         }
+
+        public int HaeDeadline()
+        {
+            return _Deadline;
+        }
+
+
 
 
     }
