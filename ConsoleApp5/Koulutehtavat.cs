@@ -7,7 +7,7 @@ namespace Projekti
     class koulutehtavat : ylaluokka
     {
         private string _KurssinNimi;
-        public koulutehtavat(string tehtavanimi, string suoritusaste, int deadline, string KurssinNimi) : base(tehtavanimi, suoritusaste, deadline)
+        public koulutehtavat(string tehtavanimi, string suoritusaste, string KurssinNimi) : base(tehtavanimi, suoritusaste)
         {
             _KurssinNimi = KurssinNimi;
         }
