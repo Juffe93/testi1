@@ -14,11 +14,12 @@ namespace Projekti
                 Console.Write("Tehtävä nimi:");
                 String tehtavanimi = Console.ReadLine();
                 Console.Write("kurssin nimi:");
-                String kategoria = Console.ReadLine();
+                String kurssinNimi = Console.ReadLine();
                 Console.Write("Syötä suoritustaste: ");
                 String suoritusaste = Console.ReadLine();
-                Console.Write("Tehtävän aikaraja: ");
-                DateTime deadline = DateTime.Parse(Console.ReadLine());
+
+
+                koulutehtavat UusiKoulutehtava = new koulutehtavat(tehtavanimi, suoritusaste, kurssinNimi);
             }
             else
             {
