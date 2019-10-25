@@ -8,14 +8,14 @@ namespace Projekti
     {
         private string _tehtavanimi;
         private string _tehtavanSuoritusaste;
-        private int _Deadline;
+        
 
 
-        public ylaluokka( string tehtavanimi, string tehtavansuoritusaste, int Deadline)
+        public ylaluokka( string tehtavanimi, string tehtavansuoritusaste)
         {
             _tehtavanimi = tehtavanimi;
             _tehtavanSuoritusaste = tehtavansuoritusaste;
-            _Deadline = Deadline;
+           
         }
         public string HaeTehtavanimi()
         {
@@ -27,10 +27,7 @@ namespace Projekti
             return _tehtavanSuoritusaste;
         }
 
-        public int HaeDeadline()
-        {
-            return _Deadline;
-        }
+        
 
 
 
