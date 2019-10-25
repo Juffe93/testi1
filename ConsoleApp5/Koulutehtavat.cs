@@ -1,15 +1,20 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
 namespace Projekti
 {
-    class koulutehtavat: ylaluokka
+    class koulutehtavat : ylaluokka
     {
-        public koulutehtavat(string tehtavanimi, int pvm, string suoritusaste) : base(tehtavanimi, pvm, suoritusaste)
+        private string _KurssinNimi;
+        public koulutehtavat(string tehtavanimi, string suoritusaste, int deadline, string KurssinNimi) : base(tehtavanimi, suoritusaste, deadline)
         {
-
+            _KurssinNimi = KurssinNimi;
+        }
+        public string HaeKurssinNimi()
+        {
+            return _KurssinNimi;
         }
     }
-    
+
 }
