@@ -6,9 +6,9 @@ namespace Projekti
 {
     class tyotehtavat : ylaluokka
     {
-        public tyotehtavat(string tehtavanimi, string suoritusaste) : base(tehtavanimi, suoritusaste)
+        public tyotehtavat(string tehtavanimi, string suoritusaste, double deadline) : base(tehtavanimi, suoritusaste, deadline)
         {
-            
+
         }
     }
 }
