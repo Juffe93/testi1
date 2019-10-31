@@ -7,15 +7,15 @@ namespace Projekti
     class ylaluokka
     {
         private string _tehtavanimi;
-        private string _tehtavanSuoritusaste;
+        private string _suoritusaste;
         private double _deadline;
 
 
 
-        public ylaluokka(string tehtavanimi, string tehtavansuoritusaste, double deadline)
+        public ylaluokka(string tehtavanimi, string suoritusaste, double deadline)
         {
             _tehtavanimi = tehtavanimi;
-            _tehtavanSuoritusaste = tehtavansuoritusaste;
+            _suoritusaste = suoritusaste;
             _deadline = deadline;
 
         }
@@ -26,7 +26,7 @@ namespace Projekti
 
         public string HaeSuoritusaste()
         {
-            return _tehtavanSuoritusaste;
+            return _suoritusaste;
         }
         public double HaeDeadline()
         {
