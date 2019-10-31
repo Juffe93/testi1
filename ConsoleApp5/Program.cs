@@ -17,11 +17,11 @@ namespace Projekti
                 String kurssinNimi = Console.ReadLine();
                 Console.Write("Syötä suoritustaste: ");
                 String suoritusaste = Console.ReadLine();
-                Console.Write("Tehtävän aikaraja: ");
-                double deadline = double.Parse(Console.ReadLine());
-
+                Console.Write("Tehtävän deadline: ");
+                DateTime deadline = DateTime.Parse(Console.ReadLine());
 
                 koulutehtavat UusiKoulutehtava = new koulutehtavat(tehtavanimi, suoritusaste, kurssinNimi, deadline);
+                Console.WriteLine($"Tehtävä: { UusiKoulutehtava.HaeTehtavanimi()}. Suoritusaste: { UusiKoulutehtava.HaeSuoritusaste()}. Kurssi: {UusiKoulutehtava.HaeKurssinNimi()}. Deadline: {UusiKoulutehtava.HaeDeadline()}. ");
             }
             else
             {
@@ -29,11 +29,12 @@ namespace Projekti
                 String tehtavanimi = Console.ReadLine();
                 Console.Write("Syötä suoritustaste: ");
                 String suoritusaste = Console.ReadLine();
-                Console.Write("Tehtävän aikaraja: ");
-                double deadline = double.Parse(Console.ReadLine());
+                Console.Write("Tehtävän deadline: ");
+                DateTime deadline = DateTime.Parse(Console.ReadLine());
 
                 tyotehtavat UusiTyotehtava = new tyotehtavat(tehtavanimi, suoritusaste, deadline);
 
+                Console.WriteLine($"Tehtävä: { UusiTyotehtava.HaeTehtavanimi()}. Suoritusaste: { UusiTyotehtava.HaeSuoritusaste()}.  Deadline: {UusiTyotehtava.HaeDeadline()}. ");
 
             }
 
@@ -43,4 +44,3 @@ namespace Projekti
         }
     }
 }
-
