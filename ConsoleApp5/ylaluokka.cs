@@ -8,11 +8,11 @@ namespace Projekti
     {
         private string _tehtavanimi;
         private string _suoritusaste;
-        private double _deadline;
+        private DateTime _deadline;
 
 
 
-        public ylaluokka(string tehtavanimi, string suoritusaste, double deadline)
+        public ylaluokka(string tehtavanimi, string suoritusaste, DateTime deadline)
         {
             _tehtavanimi = tehtavanimi;
             _suoritusaste = suoritusaste;
@@ -28,7 +28,7 @@ namespace Projekti
         {
             return _suoritusaste;
         }
-        public double HaeDeadline()
+        public DateTime HaeDeadline()
         {
             return _deadline;
         }
