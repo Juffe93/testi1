@@ -8,29 +8,27 @@ namespace Projekti
         {
             Console.Write("Syötä Kategoria: ");
             String Kategoria = Console.ReadLine();
+            Console.Write("Tehtävä nimi:");
+            String tehtavanimi = Console.ReadLine();
+            Console.Write("Syötä suoritustaste: ");
+            String suoritusaste = Console.ReadLine();
+            Console.Write("Tehtävän deadline: ");
+            DateTime deadline = DateTime.Parse(Console.ReadLine());
 
             if (Kategoria == ("Koulutehtava"))
             {
-                Console.Write("Tehtävä nimi:");
-                String tehtavanimi = Console.ReadLine();
+
                 Console.Write("kurssin nimi:");
                 String kurssinNimi = Console.ReadLine();
-                Console.Write("Syötä suoritustaste: ");
-                String suoritusaste = Console.ReadLine();
-                Console.Write("Tehtävän deadline: ");
-                DateTime deadline = DateTime.Parse(Console.ReadLine());
+
 
                 koulutehtavat UusiKoulutehtava = new koulutehtavat(tehtavanimi, suoritusaste, kurssinNimi, deadline);
                 Console.WriteLine($"Tehtävä: { UusiKoulutehtava.HaeTehtavanimi()}. Suoritusaste: { UusiKoulutehtava.HaeSuoritusaste()}. Kurssi: {UusiKoulutehtava.HaeKurssinNimi()}. Deadline: {UusiKoulutehtava.HaeDeadline()}. ");
             }
             else
             {
-                Console.Write("Tehtävä nimi:");
-                String tehtavanimi = Console.ReadLine();
-                Console.Write("Syötä suoritustaste: ");
-                String suoritusaste = Console.ReadLine();
-                Console.Write("Tehtävän deadline: ");
-                DateTime deadline = DateTime.Parse(Console.ReadLine());
+
+               
 
                 tyotehtavat UusiTyotehtava = new tyotehtavat(tehtavanimi, suoritusaste, deadline);
 
