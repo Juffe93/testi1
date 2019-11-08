@@ -28,11 +28,11 @@ namespace Projekti
             else
             {
 
-               
+                Console.Write("Työpiste:");
+                String tyopiste = Console.ReadLine();
 
-                tyotehtavat UusiTyotehtava = new tyotehtavat(tehtavanimi, suoritusaste, deadline);
-
-                Console.WriteLine($"Tehtävä: { UusiTyotehtava.HaeTehtavanimi()}. Suoritusaste: { UusiTyotehtava.HaeSuoritusaste()}.  Deadline: {UusiTyotehtava.HaeDeadline()}. ");
+                tyotehtavat UusiTyotehtava = new tyotehtavat(tehtavanimi, suoritusaste, tyopiste, deadline);
+                Console.WriteLine($"Tehtävä: { UusiTyotehtava.HaeTehtavanimi()}. Suoritusaste: { UusiTyotehtava.HaeSuoritusaste()}. Työpiste: { UusiTyotehtava.Haetyopiste()}.  Deadline: {UusiTyotehtava.HaeDeadline()}. ");
 
             }
 
