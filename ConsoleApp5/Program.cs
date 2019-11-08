@@ -6,6 +6,15 @@ namespace Projekti
     {
         static void Main(string[] args)
         {
+            Console.WriteLine(" - Tehtävälista - ");
+            Console.WriteLine();
+            Console.WriteLine(" - Syötä Kategoria");
+            Console.WriteLine(" - Tehtävä nimi");
+            Console.WriteLine(" - Syötä suoritustaste");
+            Console.WriteLine(" - Tehtävän deadline");
+            Console.WriteLine();
+
+
             Console.Write("Syötä Kategoria: ");
             String Kategoria = Console.ReadLine();
             Console.Write("Tehtävä nimi:");
@@ -20,6 +29,7 @@ namespace Projekti
 
                 Console.Write("kurssin nimi:");
                 String kurssinNimi = Console.ReadLine();
+                Console.WriteLine();
 
 
                 koulutehtavat UusiKoulutehtava = new koulutehtavat(tehtavanimi, suoritusaste, kurssinNimi, deadline);
@@ -30,6 +40,7 @@ namespace Projekti
 
                 Console.Write("Työpiste:");
                 String tyopiste = Console.ReadLine();
+                Console.WriteLine();
 
                 tyotehtavat UusiTyotehtava = new tyotehtavat(tehtavanimi, suoritusaste, tyopiste, deadline);
                 Console.WriteLine($"Tehtävä: { UusiTyotehtava.HaeTehtavanimi()}. Suoritusaste: { UusiTyotehtava.HaeSuoritusaste()}. Työpiste: { UusiTyotehtava.Haetyopiste()}.  Deadline: {UusiTyotehtava.HaeDeadline()}. ");
